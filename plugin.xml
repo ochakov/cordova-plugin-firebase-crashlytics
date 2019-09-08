@@ -65,17 +65,10 @@
       </feature>
     </config-file>
 
-    <podspec>
-      <config>
-        <source url="https://github.com/CocoaPods/Specs.git"/>
-      </config>
-      <pods use-frameworks="true">
-        <pod name="Fabric"/>
-        <pod name="Crashlytics" />
-        <pod name="FirebaseCore" />
-      </pods>
-    </podspec>
-
+    <framework src="Fabric" type="podspec" spec="~> 1.7.6"/>
+    <framework src="Crashlytics" type="podspec" spec="~> 3.10.1"/>
+    <framework src="Firebase/Core" type="podspec" spec=""/>
+	
     <header-file src="src/ios/FirebaseCrashlyticsPlugin.h"/>
     <source-file src="src/ios/FirebaseCrashlyticsPlugin.m"/>
     <header-file src="src/ios/AppDelegate+FirebaseCrashlyticsPlugin.h"/>
